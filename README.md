@@ -24,7 +24,17 @@ __Note:__ The current version of ssi does all IO synchronously. Further developm
 ### Installation
 
 ```bash
-npm install ssi 
+npm install -i --save git+https://github.com/allex/node-ssi.git
+```
+
+Or manually add to `dependencies` section of `package.json`
+
+```json
+...
+"dependencies": {
+    "node-ssi": "git+https://github.com/allex/node-ssi.git#v0.0.1"
+}
+...
 ```
 
 ### Usage
