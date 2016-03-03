@@ -1,7 +1,7 @@
 node-ssi
 ========
 
-[![Build Status](https://travis-ci.org/67726e/node-ssi.png)](https://travis-ci.org/67726e/node-ssi)
+[![Build Status](https://travis-ci.org/allex/node-ssi.png)](https://travis-ci.org/allex/node-ssi)
 
 Server Side Includes for NodeJS
 
@@ -23,36 +23,39 @@ __Note:__ The current version of ssi does all IO synchronously. Further developm
 
 ### Installation
 
+Install latest version by [npm install](https://docs.npmjs.com/cli/install)
+
 ```bash
 npm install -i --save git+https://github.com/allex/node-ssi.git
 ```
 
-Or manually add to `dependencies` section of `package.json`
+Or manually add specified version (eg: v0.0.1) to `dependencies` section of `package.json`
 
 ```json
 ...
 "dependencies": {
-    "node-ssi": "git+https://github.com/allex/node-ssi.git#v0.0.1"
+  "node-ssi": "git+https://github.com/allex/node-ssi.git#v0.0.1"
 }
 ...
 ```
 
 ### Usage
 
-```javascript
-var ssi = require("ssi");
+```js
+var ssi = require("node-ssi");
 
-var inputDirectory = "/tmp/test";
-var outputDirectory = "/tmp/output";
-var matcher = "/**/*.shtml";
+var sourceDir = '/tmp/test';
+var destDir = '/tmp/output';
+var matcher = '/**/*.shtml';
 
-var includes = new ssi(inputDirectory, outputDirectory, matcher);
+var includes = new ssi(sourceDir, destDir, matcher);
 includes.compile();
 ```
 
 ### Methods
 
 #### parse(filename, contents)
+
 _filename_ `String` path to the file
 
 _contents_ `String` Contents of the file to be parsed
