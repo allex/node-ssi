@@ -1,7 +1,7 @@
 node-ssi
 ========
 
-[![Build Status](https://travis-ci.org/allex/node-ssi.png)](https://travis-ci.org/allex/node-ssi)
+[![Build Status][travis-image]][travis-url]
 
 Server Side Includes for NodeJS
 
@@ -69,4 +69,8 @@ Method parses all of the files found by the matcher in the input directory, and 
 ### License
 
 MIT
+BSD-2-Clause
 
+
+[travis-url]: https://travis-ci.org/allex/node-ssi
+[travis-image]: http://img.shields.io/travis/allex/node-ssi.svg

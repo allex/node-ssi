@@ -23,5 +23,5 @@
   "scripts": {
     "test": "mocha"
   },
-  "license": "MIT"
+  "license": "BSD-2-Clause"
 }
